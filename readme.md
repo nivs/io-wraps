@@ -2,7 +2,7 @@
 ###Native language client library (SDK) builder for platforms using I/O Docs
 
 ## What is I/O Wraps?
-Mashery clients using I/O Docs have defined their APIs using the I/O Docs schema. I/O Wraps is a bundle of open-source tools that provides a path of taking that configuration schema and building native-language client libraries. The primary component in the bundle is the [Google APIs Client Library Generator](http://code.google.com/p/google-apis-client-generator/), an open-source tool created by Google that can take an API described in the [Google Discovery Document Format](https://developers.google.com/discovery/v1/reference#resource_discovery) and generate client libraries.
+Mashery clients using I/O Docs have defined their APIs using the I/O Docs schema. I/O Wraps is a bundle of open-source tools that provides a path of taking that configuration schema and building native-language client libraries. The primary component in the bundle is the [Google APIs Client Library Generator](https://github.com/google/apis-client-generator), an open-source tool created by Google that can take an API described in the [Google Discovery Document Format](https://developers.google.com/discovery/v1/reference#resource_discovery) and generate client libraries.
 
 First, Mashery I/O Docs configurations are converted into the Google Discovery Resource format using a conversion tool (included). Second, the Google generator is run against the newly converted configuration. And third, the corresponding Google native language client uses the generated library. PHP and Java are currently supported.
 
@@ -33,10 +33,10 @@ Above is just a pseudo-PHP-code example of how this library works.
 
 ## Requirements
 1. Python (2.6+)
-2. [Google App Utils](http://code.google.com/p/google-apputils-python/downloads/detail?name=google-apputils-0.3.0.tar.gz&can=2&q=)
+2. [Google App Utils](https://github.com/google/google-apputils) (v0.3.0)
 3. Django templates (1.1 or newer) - either through django or Google AppEngine SDKs
-4. httplib2 - http://code.google.com/p/httplib2/
-5. python-gflags - http://code.google.com/p/python-gflags/
+4. httplib2 - https://github.com/httplib2/httplib2
+5. python-gflags - https://github.com/google/python-gflags
 6. setuptools - http://pypi.python.org/pypi/setuptools/
 
 
